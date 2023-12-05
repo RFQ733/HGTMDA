@@ -153,7 +153,7 @@ class HGT(torch.nn.Module):
 
 
 model = HGT(hidden_channels=1024, out_channels=901, num_heads=2, num_layers=2)
-device = torch.device('cuda:3' if torch.cuda.is_available() else 'cpu')
+device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 data, model = data.to(device), model.to(device)
 optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 criterion = nn.CrossEntropyLoss()

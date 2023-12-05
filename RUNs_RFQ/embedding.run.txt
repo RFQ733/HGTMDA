@@ -1,0 +1,73 @@
+(yolo116) PS C:\Users\rfq\bio\MDA\MHGTMDA\HGTMDA> python .\src\embedding.py
+Epoch 0,  miRNA Loss: 6.800803184509277, disease Loss: 6.815694332122803
+Epoch 1,  miRNA Loss: 6.69866943359375, disease Loss: 6.7513017654418945
+Epoch 2,  miRNA Loss: 6.498068332672119, disease Loss: 6.617100238800049
+Epoch 3,  miRNA Loss: 6.381139755249023, disease Loss: 6.550931453704834
+Epoch 4,  miRNA Loss: 6.239228248596191, disease Loss: 6.4175825119018555
+Epoch 5,  miRNA Loss: 6.193281173706055, disease Loss: 6.390227317810059
+Epoch 6,  miRNA Loss: 6.185432434082031, disease Loss: 6.377670764923096
+Epoch 7,  miRNA Loss: 6.178569316864014, disease Loss: 6.366697788238525
+Epoch 8,  miRNA Loss: 6.171437740325928, disease Loss: 6.355466365814209
+Epoch 9,  miRNA Loss: 6.164027690887451, disease Loss: 6.343814373016357
+Epoch 10,  miRNA Loss: 6.156344413757324, disease Loss: 6.331726551055908
+Epoch 11,  miRNA Loss: 6.148387432098389, disease Loss: 6.319201469421387
+Epoch 12,  miRNA Loss: 6.14016580581665, disease Loss: 6.306241989135742
+Epoch 13,  miRNA Loss: 6.13168478012085, disease Loss: 6.292863368988037
+Epoch 14,  miRNA Loss: 6.122959136962891, disease Loss: 6.27908992767334
+Epoch 15,  miRNA Loss: 6.114004135131836, disease Loss: 6.264950752258301
+Epoch 16,  miRNA Loss: 6.1048431396484375, disease Loss: 6.25048828125
+Epoch 17,  miRNA Loss: 6.095503807067871, disease Loss: 6.235750675201416
+Epoch 18,  miRNA Loss: 6.08601713180542, disease Loss: 6.22079610824585
+Epoch 19,  miRNA Loss: 6.076417446136475, disease Loss: 6.205686569213867
+Epoch 20,  miRNA Loss: 6.066747188568115, disease Loss: 6.190488338470459
+Epoch 21,  miRNA Loss: 6.057046413421631, disease Loss: 6.175272464752197
+Epoch 22,  miRNA Loss: 6.047356605529785, disease Loss: 6.160104274749756
+Epoch 23,  miRNA Loss: 6.037718772888184, disease Loss: 6.145048141479492
+Epoch 24,  miRNA Loss: 6.028171539306641, disease Loss: 6.130167007446289
+Epoch 25,  miRNA Loss: 6.018754005432129, disease Loss: 6.115508079528809
+Epoch 26,  miRNA Loss: 6.009496688842773, disease Loss: 6.101119041442871
+Epoch 27,  miRNA Loss: 6.000424385070801, disease Loss: 6.087034702301025
+Epoch 28,  miRNA Loss: 5.991558074951172, disease Loss: 6.07328462600708
+Epoch 29,  miRNA Loss: 5.982914447784424, disease Loss: 6.059886455535889
+Epoch 30,  miRNA Loss: 5.974504470825195, disease Loss: 6.0468573570251465
+Epoch 31,  miRNA Loss: 5.966334342956543, disease Loss: 6.034206390380859
+Epoch 32,  miRNA Loss: 5.958407878875732, disease Loss: 6.021939277648926
+Epoch 33,  miRNA Loss: 5.95072603225708, disease Loss: 6.010059356689453
+Epoch 34,  miRNA Loss: 5.943286895751953, disease Loss: 5.998570442199707
+Epoch 35,  miRNA Loss: 5.936089992523193, disease Loss: 5.987471103668213
+Epoch 36,  miRNA Loss: 5.9291300773620605, disease Loss: 5.976767539978027
+Epoch 37,  miRNA Loss: 5.9224090576171875, disease Loss: 5.966462135314941
+Epoch 38,  miRNA Loss: 5.915922164916992, disease Loss: 5.956559181213379
+Epoch 39,  miRNA Loss: 5.909671783447266, disease Loss: 5.947063446044922
+Epoch 40,  miRNA Loss: 5.903655052185059, disease Loss: 5.937978744506836
+Epoch 41,  miRNA Loss: 5.89787483215332, disease Loss: 5.929312229156494
+Epoch 42,  miRNA Loss: 5.892332553863525, disease Loss: 5.9210638999938965
+Epoch 43,  miRNA Loss: 5.887030124664307, disease Loss: 5.913238525390625
+Epoch 44,  miRNA Loss: 5.8819661140441895, disease Loss: 5.905833721160889
+Epoch 45,  miRNA Loss: 5.877147197723389, disease Loss: 5.898849964141846
+Epoch 46,  miRNA Loss: 5.872570037841797, disease Loss: 5.892281532287598
+Epoch 47,  miRNA Loss: 5.868234634399414, disease Loss: 5.8861212730407715
+Epoch 48,  miRNA Loss: 5.864139080047607, disease Loss: 5.8803606033325195
+Epoch 49,  miRNA Loss: 5.860281467437744, disease Loss: 5.874989032745361
+miRNA embedding: tensor([[1.0000, 1.0000, 0.0000,  ..., 0.0000, 0.0000, 0.0000],
+        [1.0000, 1.0000, 0.0000,  ..., 0.0000, 0.0000, 0.0000],
+        [0.9957, 0.9285, 0.0796,  ..., 0.0971, 0.1082, 0.0473],
+        ...,
+        [0.9952, 0.9347, 0.0760,  ..., 0.1008, 0.0991, 0.0455],
+        [0.9881, 0.8941, 0.1173,  ..., 0.1413, 0.1438, 0.0720],
+        [0.9935, 0.9205, 0.0862,  ..., 0.1239, 0.1152, 0.0571]],
+       device='cuda:0'), disease embedding: tensor([[1.0000, 1.0000, 0.0000,  ..., 0.0000, 0.0000, 0.0000],
+        [0.8981, 0.9913, 0.0906,  ..., 0.1146, 0.1130, 0.0671],
+        [1.0000, 1.0000, 0.0000,  ..., 0.0000, 0.0000, 0.0000],
+        ...,
+        [1.0000, 1.0000, 0.0000,  ..., 0.0000, 0.0000, 0.0000],
+        [1.0000, 1.0000, 0.0000,  ..., 0.0000, 0.0000, 0.0000],
+        [1.0000, 1.0000, 0.0000,  ..., 0.0000, 0.0000, 0.0000]],
+       device='cuda:0')
+Traceback (most recent call last):
+  File ".\src\embedding.py", line 181, in <module>
+    np.savetxt('./dataset/data/miRNA_embedding.txt', miRNA_embedding.tolist(), fmt="%f", comments='')
+  File "<__array_function__ internals>", line 180, in savetxt
+  File "F:\miniconda3\envs\yolo116\lib\site-packages\numpy\lib\npyio.py", line 1523, in savetxt
+    open(fname, 'wt').close()
+FileNotFoundError: [Errno 2] No such file or directory: './dataset/data/miRNA_embedding.txt'

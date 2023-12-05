@@ -15,7 +15,10 @@ import warnings
 warnings.filterwarnings("ignore")
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"  
 os.environ['CUDA_VISIBLE_DEVICES'] = "1"  
+m_odel_dir = "./save_model/5_fold"  
 
+if not os.path.exists(m_odel_dir):
+    os.makedirs(m_odel_dir)
 device = t.device('cuda:0' if t.cuda.is_available() else "cpu")
 t.backends.cudnn.enabled = True
 
@@ -109,7 +112,8 @@ if __name__ == '__main__':
         tran_label = dataset['all_sample'][train_index][:, 2]
         test_sample = dataset['all_sample'][test_index][:, :2]
         test_sample_index = make_index(dataset, test_sample)
-        test_label = dataset['all_sample'][test_index][:, 2]        tran_sample_index = t.FloatTensor(tran_sample_index).to(device)
+        test_label = dataset['all_sample'][test_index][:, 2]   
+        tran_sample_index = t.FloatTensor(tran_sample_index).to(device)
         tran_label = t.FloatTensor(tran_label.astype(int)).to(device)
         test_sample_index = t.FloatTensor(test_sample_index).to(device)
         test_label = t.FloatTensor(test_label.astype(int)).to(device)

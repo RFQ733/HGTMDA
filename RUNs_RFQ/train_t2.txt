@@ -1,0 +1,5 @@
+Epoch: 001/200   | Learning Rate 0.001000
+Train Auc.: 0.5070 | Test Auc.: 0.5074
+Train Loss.: 0.6935
+Train Acc.: 0.4983 | Test Acc.: 0.5001
+Traceback (most recent call last):
