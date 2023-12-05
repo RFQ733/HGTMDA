@@ -12,14 +12,13 @@ import argparse
 import os
 import warnings
 
-warnings.filterwarnings("ignore")
-os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"  
-os.environ['CUDA_VISIBLE_DEVICES'] = "1"  
+
 m_odel_dir = "./save_model/5_fold"  
 
 if not os.path.exists(m_odel_dir):
     os.makedirs(m_odel_dir)
 device = t.device('cuda:0' if t.cuda.is_available() else "cpu")
+print(device)
 t.backends.cudnn.enabled = True
 
 parser = argparse.ArgumentParser()
@@ -150,6 +149,7 @@ if __name__ == '__main__':
 
             
             if test_acc > max_test_acc:
+                t.save(model.state_dict(), "/content/drive/MyDrive/train_model.pth")
                 t.save(model.state_dict(), "./save_model/5_fold/train_model.pth")
                 max_test_acc = test_acc
                 auc = test_auc
